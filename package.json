@@ -1,0 +1,8 @@
+{
+  "name": "@townland-project/cdn",
+  "version": "0.0.0",
+  "license": "GPL-3",
+  "scripts": {
+    "build:character": "node ./.github/scripts/character.json.js"
+  }
+}
