@@ -1,5 +1,6 @@
 require('./character.json')
 require('./room.json')
+require('./phone.json')
 
 const fs = require('fs'),
     path = require('path')
@@ -30,12 +31,14 @@ function WriteDatabase(database) {
 SetBaseURL().then(() => {
     INCSize(path.join(__dir, 'character.json'))
     INCSize(path.join(__dir, 'room.json'))
+    INCSize(path.join(__dir, 'phone.json'))
 
     WriteDatabase({
         "size": size,
         "item": {
             "character": `${__base}character.json`,
             "room": `${__base}room.json`,
+            "phone": `${__base}phone.json`,
         }
     })
 })
