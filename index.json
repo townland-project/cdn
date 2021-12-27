@@ -1,9 +1,1 @@
-{
-    "size": 6691,
-    "item": {
-        "character": "https://cdn.townland.xyz/character.json",
-        "room": "https://cdn.townland.xyz/room.json",
-        "phone": "https://cdn.townland.xyz/phone.json",
-        "application": "https://cdn.townland.xyz/application.json"
-    }
-}
+{"size":6691,"item":{"character":"https://cdn.townland.xyz/character.json","room":"https://cdn.townland.xyz/room.json","phone":"https://cdn.townland.xyz/phone.json","application":"https://cdn.townland.xyz/application.json"}}
