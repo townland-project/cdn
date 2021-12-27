@@ -39,6 +39,7 @@ SetBaseURL().then(() => {
             "character": `${__base}character.json`,
             "room": `${__base}room.json`,
             "phone": `${__base}phone.json`,
+            "application": `${__base}application.json`
         }
     })
 })
