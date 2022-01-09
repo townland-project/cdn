@@ -1,7 +1,7 @@
 const fs = require('fs'),
     path = require('path')
 
-const ImageExt = ['.png', '.jpg']
+const ImageExt = ['.png', '.jpg', '.svg', '.gif']
 const OutDatabaseFileName = 'character.json'
 const __dir = path.join(__dirname, '..', '..')
 let __base = ''
