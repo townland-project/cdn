@@ -1,7 +1,3 @@
-require('./character.json')
-require('./room.json')
-require('./phone.json')
-
 const fs = require('fs'),
     path = require('path')
 
@@ -10,6 +6,19 @@ const __dir = path.join(__dirname, '..', '..')
 let __base = ''
 let size = 0
 
+RM(path.join(__dir, 'character.json'))
+RM(path.join(__dir, 'room.json'))
+RM(path.join(__dir, 'phone.json'))
+
+require('./character.json')
+require('./room.json')
+require('./phone.json')
+
+
+function RM(file = __dir) {
+    if (fs.existsSync(file))
+        fs.unlinkSync(file)
+}
 
 function INCSize(file = __dir) {
     size += fs.statSync(file).size
